@@ -7,25 +7,20 @@ Drive AIは、運転中の退屈な時間を新しい体験に変えるための
 
 1. リポジトリをクローンします。
     ```bash
-    git clone https://github.com/yourusername/your-repository-name.git
+    git clone https://github.com/AnRi1202/drive_AI
     ```
 
-2. プロジェクトディレクトリに移動します。
-    ```bash
-    cd your-repository-name
-    ```
-
-3. 必要なパッケージをインストールします。
+2. 必要なパッケージをインストールします。
     ```bash
     npm install
     ```
 
-4. 環境変数を設定します。Google Maps APIキーを取得し、`.env`ファイルを作成して設定します。
+3. 環境変数を設定します。Google Maps APIキーを取得し、`.env`ファイルを作成して設定します。
     ```plaintext
     GOOGLE_MAPS_API_KEY=your_google_maps_api_key
     ```
 
-5. アプリケーションを起動します。
+4. アプリケーションを起動します。
     ```bash
     npm start
     ```
