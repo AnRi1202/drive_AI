@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4; /* 背景色を追加 */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #555;
+}
+
+.hero {
+  background-image: url('/path/to/your/image.webp');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 半透明のオーバーレイ */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.app-links {
+  margin-top: 20px;
+}
+
+.app-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.app-links img {
+  width: 150px; /* 画像の幅を調整 */
+  height: auto;
+}
+
+/* ログイン画面用のスタイル */
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #555;
+}

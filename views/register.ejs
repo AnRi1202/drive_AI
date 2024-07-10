@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録 - Drive AI</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Drive AI</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">トップ</a></li>
+                    <li><a href="/start">早速始める</a></li>
+                    <li><a href="/register">新規登録</a></li>
+                    <li><a href="/login">ログイン</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>新規登録</h2>
+            <form action="/register" method="post">
+                <div>
+                    <label for="name">名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">パスワード</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">パスワードの確認</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">登録する</button>
+            </form>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

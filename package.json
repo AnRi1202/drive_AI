@@ -1,0 +1,26 @@
+{
+  "name": "drive_ai",
+  "version": "1.0.0",
+  "description": "ドライブ中に対話型のAIが地域の情報を提供したり,雑談の御供をしてくれるアプリを目指しています",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rikuto Ide",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnRi1202/drive_AI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnRi1202/drive_AI/issues"
+  },
+  "homepage": "https://github.com/AnRi1202/drive_AI#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

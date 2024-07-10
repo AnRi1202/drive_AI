@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早速始める - Drive AI</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      #map {
+        height: 400px; /* マップの高さを調整 */
+        width: 100%; /* マップの幅を調整 */
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Drive AI</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">トップ</a></li>
+                    <li><a href="/start">早速始める</a></li>
+                    <li><a href="/register">新規登録</a></li>
+                    <li><a href="/login">ログイン</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>早速始める</h2>
+            <div id="map"></div>
+        </div>
+    </main>
+    <script>
+      function initMap() {
+        var mapOptions = {
+          center: new google.maps.LatLng(35.6895, 139.6917), // 東京の緯度と経度
+          zoom: 10,
+        };
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&callback=initMap" async defer></script>
+</body>
+</html>
